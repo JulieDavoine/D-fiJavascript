@@ -5,19 +5,28 @@
     <head>            
         <meta charset="utf-8">
         <title>Défis JavaScript en Binôme</title>  
-        <link rel="stylesheet" href="style.css" />
         <script type="text/javascript" src="defis.js"></script>                          
     </head>
                 
     <body>
+        
         <div id="ladiv" style="width:100px; height:100px; background-color:blue;"></div>
+    
+        <div id="container">
+            <input type="button" value="taille">
+            <input type="button" value="chgtColor"  onclick="chgColor()">
+            <input type="button" value="Couleur Initiale" onclick="colorInitial ()">
+            <input type="button" value="Apparation/disparition" onclick="hideShow()">
+        </div>  
 
+    <style type="text/css">
 
-        <input type="button">
-        <input type="button" value="chgtColor"  onclick="chgColor()">
-        <input type="button" value="Couleur Initiale" onclick="colorInitial ()">
-        <input type="button" onclick="hideShow()">
-       
+            #container {
+                position: fixed;
+                text-align: center;
+            }
+            
+    </style>    
         <script type="text/javascript" src="Style.js"></script>
 
     </body>
