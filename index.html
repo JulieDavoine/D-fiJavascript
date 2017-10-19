@@ -5,13 +5,27 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <title>Défis JavaScript en Binôme</title>
+        <script type="text/javascript" src="defis.js"></script>                          
 
     </head>
 
     <body>
 
         <button id="Bouton" type="button" onclick="Bouton()" style="font-size: 20px; display: block; margin: auto; margin-top: 50px; background-color: #fff; border: none;"> C&#39;est trop facile&#133; j&#39;aime pas trop beaucoup &#231;a&#133; j&#39;prefere quand c&#39;est un peu trop plus moins facile&#133; Julie DA et NinjaRetroGaming : Mission JavaScript, Octobre 2017.</button>
-       
+        <div id="container">
+                <input type="button" value="taille">
+                <input type="button" value="chgtColor"  onclick="chgColor()">
+                <input type="button" value="Couleur Initiale" onclick="colorInitial ()">
+                <input type="button" value="Apparation/disparition" onclick="hideShow()">
+            </div>  
+            <style type="text/css">
+                
+                #container {
+                    position: fixed;
+                    text-align: center;
+                }
+                            
+            </style>    
         <script type="text/javascript" src="Style.js"></script>
 
     </body>
