@@ -4,8 +4,7 @@
 
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
-        <title>Défis JavaScript en Binôme</title>
-        <script type="text/javascript" src="defis.js"></script>                          
+        <title>Défis JavaScript en Binôme</title>                 
 
     </head>
 
@@ -16,10 +15,10 @@
             Julie DA et NinjaRetroGaming : Mission JavaScript, Octobre 2017.</button>
 
             
-        <div id="ladiv" style="width:100px; height:100px; background-color:blue;"></div>
+        <div id="ladiv"></div>
 
         <div id="container">
-                <input type="button" value="taille">
+                <input type="button" value="taille" onclick="taille">
                 <input type="button" value="chgtColor"  onclick="chgColor()">
                 <input type="button" value="Couleur Initiale" onclick="colorInitial ()">
                 <input type="button" value="Apparation/disparition" onclick="hideShow()">
@@ -30,9 +29,71 @@
                     position: fixed;
                     text-align: center;
                 }
-                            
+
+                #ladiv {
+
+                    background-color: blue;
+                    height: 100px;
+                    width: 100px;
+                    margin-top: 200px;
+                    margin-bottom: 20%;
+
+                    }
             </style>    
-        <script type="text/javascript" src="Style.js"></script>
+            <script type="text/javascript">
+                    function taille() {
+                        var height = document.getElementById('taille').style.height;
+                        var test = '10px';
+                        if (height <= 300px) {
+                            document.getElementById('taille').style.height = '10px';
+                        }
+                        else {
+                            return = 0;
+                            }
+                        }
+
+                    function Bouton() {
+                        var ftSize = document.getElementById('Bouton').style.fontSize;
+                        var test = '20px';
+                        if (ftSize == test) {
+                            document.getElementById('Bouton').style.fontSize = '50px';
+                        }
+                        else {
+                            document.getElementById('Bouton').style.fontSize = '20px';
+                            }
+                        }
+                    function chgColor (){
+                        document.getElementById("ladiv").style.backgroundColor='green';
+                        }
+
+                    function colorInitial (){
+                        document.getElementById("ladiv").style.backgroundColor='blue';
+                        }
+                    
+                    function hideShow()
+                        {
+                        if (document.getElementById("ladiv").style.display=='block')
+                            {
+                            document.getElementById("ladiv").style.display='none';
+                            }
+                        else
+                            {
+                            document.getElementById("ladiv").style.display='block';
+                            }    
+                        }
+
+                    window.onkeydown = function (e) {
+                        var key = e.keyCode || e.which;
+                        switch (key) {
+                            case 38:
+                                ladiv.style.marginTop = '100px';
+                                setTimeout(function(){ladiv.style.marginTop = '200px';}, 2000);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+            </script>
 
     </body>
 

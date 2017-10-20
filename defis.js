@@ -18,6 +18,4 @@ function hideShow()
        }    
    }
 
-function carreMove(){
 
-}
