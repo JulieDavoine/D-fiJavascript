@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Défis JavaScript en Binôme</title>                 
+
+    </head>
+
+    <body>
+        <div id="ladiv"></div>
+
+        <style type="text/css">
+    
+            #ladiv {
+
+                background-color: blue;
+                height: 100px;
+                width: 100px;
+                margin-top: 100px;
+
+                }
+        </style>    
+           
+        <script type="text/javascript">
+                    
+
+
+            window.onkeydown = function (e) {
+                var key = e.keyCode || e.which;
+                switch (key) {
+                    case 38:
+                        ladiv.style.marginTop = '100px';
+                        setTimeout(function(){ladiv.style.marginTop = '200px';}, 200);
+                        break;
+                    default:
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>
