@@ -17,3 +17,7 @@ function hideShow()
        document.getElementById("ladiv").style.display='block';
        }    
    }
+
+function carreMove(){
+
+}
